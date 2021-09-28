@@ -11,7 +11,7 @@ test&cls
 color 0b  
 echo \-------------------------------------------------------------------------/
 echo \----                                                                 ----/
-echo \---          BASE NOVA ERA BY Brito#5471                              ---/
+echo \---          BASE MALDIVAS BY zPH#0002                                ---/
 echo \--                                                                     --/
 echo \-------------------------------------------------------------------------/ 
 echo Starting Resources...
@@ -19,11 +19,11 @@ pause
 timeout 1
 :loop
 color 0b 
-@echo (%time%) Starting The City ...
+@echo (%time%) Starting The Server ...
 color 0b
 @echo Pressione Enter nesta janela para reiniciar o servidor imediatamente, mantenha esta janela aberta para reinicializacoes automaticas do servidor de 5 em 5 horas.
-start "Cidade Nova Era" start artifacts\FXServer.exe artifacts\FXServer.exe +set onesync on +set onesync_enableInfinity 1 +exec server.cfg
-timeout /t 38000
+start artifacts\FXServer.exe +set onesync on +set onesync_enableInfinity 0 +exec server.cfg
+timeout /t 43200
 taskkill /f /im FXServer.exe
 @echo Encerramento do servidor com sucesso.
 timeout /t 2 >nul
